@@ -29,7 +29,7 @@ int main() {
         printf("Digite a letra inicial do País do qual a sua cidade pertence: ");
         scanf("%c", &A);
 
-        printf(" Digite o número da sua carta de 1 até 4: ");
+        printf("Digite o número da sua carta de 1 até 4: ");
         scanf ("%d", &codigodacarta1);
 
         printf("Digite o nome da cidade: ");
@@ -39,15 +39,55 @@ int main() {
         scanf("%f", &populacao1);
 
         printf("Digite a área total da cidade em Km2: ");
-        scanf("%f",&area1);
+        scanf( "%f", &area1);
 
         printf("Digite o PIB da cidade em U$: ");
-        scanf("%f", &PIB1);
+        scanf(" %f", &PIB1);
 
         printf("Digite o número de pontos turísticos: ");
-        scanf("%d", &numerodepontosturiscos1);
+        scanf(" %d", &numerodepontosturiscos1);
 
-    
+
+        printf("Carta B01\n");
+
+        printf("Digite a letra inicial do País do qual a sua cidade pertence: ");
+        scanf("     %c", &B);
+
+        printf("Digite o número da sua carta de 1 até 4: ");
+        scanf ("%d", &codigocarta2);
+
+        printf("Digite o nome da cidade: ");
+        scanf("%s", nomedacidade2);
+
+        printf("Digite a população da cidade: ");
+        scanf("%f", &populacao2);
+
+        printf("Digite a área total da cidade em Km2: ");
+        scanf("%f",&area2);
+
+        printf("Digite o PIB da cidade em U$: ");
+        scanf("%f", &PIB2);
+
+        printf("Digite o número de pontos turísticos: ");
+        scanf("%d", &numerodepontosturiscos2);
+
+        printf("-------------------------------------------------------------------------------\n");
+
+        printf("Carta A01\n");
+        printf("Nome da cidade: %s\n", nomedacidade1);
+        printf("A pipulação da cidadade é:  %f milhões\n", populacao1);
+        printf("A área da cidade é de: %f Km2\n", area1);
+        printf("O PIB da cidade é de: U$ %f milhões\n", PIB1);
+        printf("Total de pontos turísticos: %d\n", numerodepontosturiscos1);
+
+        printf("-------------------------------------------------------------------------------\n");
+
+        printf("Carta A01\n");
+        printf("Nome da cidade:%s\n", nomedacidade2);
+        printf("A pipulação da cidadade é: %f milhões\n", populacao2);
+        printf("A área da cidade é de: %f Km2\n", area2);
+        printf("O PIB da cidade é de: U$ %f milhões\n", PIB2);
+        printf("Total de pontos turísticos: %d\n", numerodepontosturiscos2);
 
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     

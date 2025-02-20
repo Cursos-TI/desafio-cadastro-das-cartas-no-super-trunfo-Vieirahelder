@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
@@ -6,22 +7,48 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste Helder Vieira Nascimento
 
+
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
 
-    char pais; //como sugerido inserir uma letra que defina o pais de A a H.
-    char codigodacarta[20]; //inserir a letra de A a H  seguida de numero como sugerido exemplo A01.
-    char nomedacidade[50];  //inserir o nome da cidade como sugerido.
-    float populacao; // inserir a popupalacao como sugerido.
-    float area; //inserrir a populacao em km2 como sugerido.
-    float PIB; // inserir o valor do PIB como sugerido.
-    int numerodepontosturiscos; // inserir o numero de pontos como sugerido.
+    char A,B,C,D,E,H; //como sugerido inserir uma letra que defina o pais de A a H.
+    int codigodacarta1, codigocarta2; //inserir seguencia numeria de 01 a 04  que precedera a letra inicial do país.
+    char nomedacidade1[50];  //inserir o nome da cidade como sugerido.
+    char nomedacidade2[50];
+    float populacao1, populacao2; // inserir a popupalacao como sugerido.
+    float area1,area2; //inserrir a populacao em km2 como sugerido.
+    float PIB1,PIB2; // inserir o valor do PIB como sugerido.
+    int numerodepontosturiscos1,numerodepontosturiscos2; // inserir o numero de pontos como sugerido.
 
 
     
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
+        printf("Carta A01\n");
+        printf("Digite a letra inicial do País do qual a sua cidade pertence: ");
+        scanf("%c", &A);
+
+        printf(" Digite o número da sua carta de 1 até 4: ");
+        scanf ("%d", &codigodacarta1);
+
+        printf("Digite o nome da cidade: ");
+        scanf("%s", nomedacidade1);
+
+        printf("Digite a população da cidade: ");
+        scanf("%f", &populacao1);
+
+        printf("Digite a área total da cidade em Km2: ");
+        scanf("%f",&area1);
+
+        printf("Digite o PIB da cidade em U$: ");
+        scanf("%f", &PIB1);
+
+        printf("Digite o número de pontos turísticos: ");
+        scanf("%d", &numerodepontosturiscos1);
+
+    
+
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
     // Exibição dos Dados das Cartas:

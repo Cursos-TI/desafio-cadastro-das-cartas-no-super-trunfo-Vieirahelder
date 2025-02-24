@@ -90,7 +90,7 @@ int main() {
         densidadepop1 = populacao1 / area1;
         printf("A densidade populaional é: %.2f\n", densidadepop1);
         rendapercapita1 = PIB1 / populacao1;
-        printf("A renda percapita é: %e\n", rendapercapita1);
+        printf("A renda percapita é: %f\n", rendapercapita1);
 
 
         printf("-------------------------------------------------------------------------------\n");
@@ -104,7 +104,7 @@ int main() {
         densidadepop2 = populacao2 / area2;
         printf("A densidade popupalional é: %.2f\n", densidadepop2);
         rendapercapita2 = PIB2 / populacao2;
-        printf("A renda percapita é: %e\n", rendapercapita2);
+        printf("A renda percapita é: %f\n", rendapercapita2);
         
 
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.

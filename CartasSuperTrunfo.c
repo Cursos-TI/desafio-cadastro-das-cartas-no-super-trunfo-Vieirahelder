@@ -19,14 +19,17 @@ int main() {
     float populacao1;
     float populacao2; // inserir a popupalacao como sugerido.
     float area1;
+    float densidadepop1 = populacao1 / area1;
     float area2; //inserrir a populacao em km2 como sugerido.
+    float densidadepop2 = populacao2 / area2;
     float PIB1;
+    float rendapercapita1 = PIB1 / populacao1;
     float PIB2; // inserir o valor do PIB como sugerido.
+    float rendapercapita2 = PIB2 / populacao2;
     int numerodepontosturiscos1,numerodepontosturiscos2; // inserir o numero de pontos como sugerido.
-    float densidadepop1 = (float)populacao1 / area1;
-    float densidadepop2 = (float)populacao2 / area2;
-    float rendapercapita1 = (float)PIB1 / populacao1;
-    float rendapercapita2 = (float)PIB2 / populacao2;
+    
+   
+    
     
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -77,27 +80,31 @@ int main() {
         scanf("%d", &numerodepontosturiscos2);
 
         printf("-------------------------------------------------------------------------------\n");
-
+        
         printf("Carta A01\n");
         printf("Nome da cidade: %s\n", nomedacidade1);
-        printf("A pipulação da cidadade é:  %f milhões\n", populacao1);
-        printf("A área da cidade é de: %f Km2\n", area1);
-        printf("O PIB da cidade é de: U$ %f milhões\n", PIB1);
+        printf("A pipulação da cidadade é:  %.2f milhões\n", populacao1);
+        printf("A área da cidade é de: %.2f Km2\n", area1);
+        printf("O PIB da cidade é de: U$ %.2f bilhões\n", PIB1);
         printf("Total de pontos turísticos: %d\n", numerodepontosturiscos1);
-        printf("A densidade popupalional é: %f\n", densidadepop1);
-        printf("A renda percapita é: %f\n", rendapercapita1);
+        densidadepop1 = populacao1 / area1;
+        printf("A densidade populaional é: %.2f\n", densidadepop1);
+        rendapercapita1 = PIB1 / populacao1;
+        printf("A renda percapita é: %e\n", rendapercapita1);
 
 
         printf("-------------------------------------------------------------------------------\n");
 
         printf("Carta A02\n");
         printf("Nome da cidade:%s\n", nomedacidade2);
-        printf("A pipulação da cidadade é: %f milhões\n", populacao2);
-        printf("A área da cidade é de: %f Km2\n", area2);
-        printf("O PIB da cidade é de: U$ %f milhões\n", PIB2);
+        printf("A população da cidadade é: %.2f milhões\n", populacao2);
+        printf("A área da cidade é de: %.2f Km2\n", area2);
+        printf("O PIB da cidade é de: U$ %.2f bilhões\n", PIB2);
         printf("Total de pontos turísticos: %d\n", numerodepontosturiscos2);
-        printf("A densidade popupalional é: %f\n", densidadepop2);
-        printf("A renda percapita é: %f\n", rendapercapita2);
+        densidadepop2 = populacao2 / area2;
+        printf("A densidade popupalional é: %.2f\n", densidadepop2);
+        rendapercapita2 = PIB2 / populacao2;
+        printf("A renda percapita é: %e\n", rendapercapita2);
         
 
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.

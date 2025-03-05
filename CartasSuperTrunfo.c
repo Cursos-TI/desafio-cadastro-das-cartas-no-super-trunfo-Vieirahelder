@@ -137,5 +137,22 @@ int main() {
     printf("Renda per Capita: Carta 2 venceu (%d)\n", resultadorendapercapita2);
     printf("Super Poder: Carta 2 venceu (%d)\n", resultadosuperpoder2);
 
+    printf("\n-------------------------------------------------------------------------------------------------\n");
+    //------------------------------------------------------------------------------------------------------------------------------//
+    //iniciando a primeira parte do módulo 2
+    // 1. comparar um atributo escolhido com if/else
+      // 2. exibir carta 1 venceu (numero de populacao)
+    // 3. exibir carta um (cidade) venceu
+
+    printf("\n---------------------------- COMPAÇÅO DE ATRIBUTO: MAIOR POPULAÇaO ---------------------------------------\n");
+         if (populacao1 > populacao2){
+        printf("%s vence com população de %.2f", nomeCidade1, populacao1);
+             } else {
+                printf("%s vence com população de %.2f\n", nomeCidade2, populacao2);
+  }
+  
     return 0;
+
+
+    
 }
